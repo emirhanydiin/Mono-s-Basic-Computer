@@ -10,12 +10,12 @@ The design follows the classic **hardwired control unit** approach with a 4-bit 
 
 ```
                     ┌────────────────────────┐
-                    │       BC_I (Top)        │
+                    │       BC_I (Top)       │
                     │  ┌──────────────────┐  │
           clk ─────►│  │    Controller    │  │
           FGI ─────►│  │  (Hardwired CU)  │  │
                     │  └────────┬─────────┘  │
-                    │  Control  │ Signals     │
+                    │  Control  │ Signals    │
                     │  ┌────────▼─────────┐  │
                     │  │     Datapath     │  ├──► PC, AR, IR
                     │  │  16-bit Bus      │  ├──► AC, DR, E
